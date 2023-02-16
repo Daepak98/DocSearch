@@ -1,0 +1,6 @@
+doc_manager:
+  AUTO_ADD_DOCS_DIR: "./docs/"
+  DOC_INDEX_HEADERS:
+    - "DOCTAG"
+    - "DOCUMENT_PATH"
+  UPDATE_TIMER: 2
