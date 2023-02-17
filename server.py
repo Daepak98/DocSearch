@@ -20,7 +20,9 @@ def get_doc(doc_name: str):
         return f"Doc `{doc_name}` not found", 404
 
 
-app.run(
-    host="localhost",
-    port=5000,
-)
+if __name__ == "__main__":
+    app.run(
+        host="localhost",
+        port=5000,
+        debug=True
+    )
