@@ -28,7 +28,9 @@ Then run the following command:
 
 Again, make sure to use the `<tag-version>` specified in the `docker build` command. This command will create and run a container with the `doc-search` image as a base. If the container spins up correctly, the command will output a container ID, as well as you should be able to view the container in Docker Desktop. 
 
-With the application up and running, you can navigate to your browser and go to `http://localhost:5000/` and you should be able to see a page that just says "Home?". This is because the website is still a WIP. However, if you add documents to the container's `docs` folder, you can append the document's name (without the extension) to the end of the URL and get a document in return. As a test, you can do this with the dummy PDF that is already in the `docs` folder, `output.pdf`. If is intentionally empty, but it should suffice to show that when you go to `http://localhost:5000/output`, you will get the `output.pdf` document back.
+With the application up and running, you can navigate to your browser and go to `http://localhost:5000/` and you should be able to see a page that just says "Home?". This is because the website is still a WIP. However, if you add documents to the container's `docs` folder, you can append the document's name (without the extension) to the end of the URL and get a document in return*. As a test, you can do this with the dummy PDF that is already in the `docs` folder, `output.pdf`. If is intentionally empty, but it should suffice to show that when you go to `http://localhost:5000/output`, you will get the `output.pdf` document back.
+
+*_In order to do this, you will need to either mount a folder of documents to the `docs` folder in the container (via `-v` in the `docker run` command) or clone the source code and rebuild the image that way. I will work on adding documentation on how to best go about either of these options in the near future._
 
 ### During Development
 TODO: Add doc info here too
