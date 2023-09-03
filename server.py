@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home_page():
-    return "Home?"
+    return "Home!"
 
 
 @ app.route("/<doc_name>", methods=["GET"])
