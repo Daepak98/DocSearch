@@ -5,6 +5,7 @@ import doc_manager as dm
 
 app = Flask(__name__)
 
+# This is to check the git commits 
 
 @app.route("/")
 def home_page():
